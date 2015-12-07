@@ -1,0 +1,10 @@
+#!/bin/bash
+
+GITSTATUS=`git status --porcelain 2> /dev/null`
+
+# docker build -t log-daddy .
+if [[ $GITSTATUS == "" ]]; then
+   echo "CLEAN GIT" >&2
+else
+   echo "DIRTY GIT <$GITSTATUS>" >&2
+fi
