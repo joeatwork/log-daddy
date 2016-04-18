@@ -5,7 +5,7 @@ GITSHA=`git rev-parse HEAD`
 
 docker build -t log-daddy .
 if [[ $GITSTATUS == "" ]]; then
-    docker tag log-daddy quay.io/joeatwork/log-daddy:$(GITSHA)
+    docker tag log-daddy quay.io/joeatwork/log-daddy:${GITSHA}
     docker push quay.io/joeatwork/log-daddy
 else
     echo "(Don't push to quay, we're still working on it)" >&2
