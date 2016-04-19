@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set +e
+
 GITSTATUS=`git status --porcelain 2> /dev/null`
 GITSHA=`git rev-parse HEAD`
 
