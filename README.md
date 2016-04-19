@@ -7,9 +7,9 @@ that sort of thing. Either way, log-daddy won't judge!
 
 ## To use
 
-Just pull your container from quay.io/joeatwork/log-daddy:latest
+Just pull your container from `quay.io/joeatwork/log-daddy:latest`
 
 ## To build
 
-Run the './build' script. You'll probably want to change the
+Run the `build` script in the root of the repo. You'll probably want to change the
 repository you use to tag the container, unless you're me.
